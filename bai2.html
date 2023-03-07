@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function min( ary){
+        let minx=  ary[0];
+
+        for( let i=1 ;i <ary.length;i++){
+            if(ary[i]<minx){
+                minx=ary[i];
+            }
+        }
+        return minx;
+    }
+    let arr1=[1,23,34,];
+    let mi=min(arr1);
+    alert(mi);
+</script>
+
+</body>
+</html>
