@@ -5,21 +5,25 @@
     <title>Title</title>
 </head>
 <body>
+<h3> Temperature Conerter</h3><br>
+<P> Type a value in the Fahrenheit field to convert the value to Celcius;</P>
+<form>
+
+    <label> Fahrenhiet</label>
+    <input  type="number" placeholder="Fahrenhietdo"
+           oninput="temperatureConverter(this.value)"
+           onchange="temperatureConverter(this.value)">
+
+
+</form>
+   <p> Celsius:<span id=" outputCelsius"></span></p>
 <script>
+    function temperatureConverter(valNum){
+        valNum= parseFloat(valNum);
+        document.getElementById(" outputCelsius").innerText = (valNum-32)/1.8;
+    }
 
-   function processConfirm(answer) {
-       let result = "";
-       if ( answer){
-           result = " excellent. We'll play a nice game of chess.";
-       } else {
-           result = " maybe later then.";
-       }
-        return result;
 
-   }
-   let confirmAnswer = confirm(" shall we play a game");
-   let theAnswer = processConfirm(confirmAnswer);
-   alert(theAnswer);
 
 
 
