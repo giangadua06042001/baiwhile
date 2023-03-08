@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let star= ["Polaris", "Aldebaran", "Deneb","Vega", "Altair", "Dubhe" , "Regulus"];
+    let Tstar= [ "Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major ", "Leo"];
+    function newstar(){
+        let  check, index;
+        n=prompt("nhap vao mot ngoi sao");
+        for( let i =0; i<star.length; i++){
+            if(n===star[i]){
+                check = true;
+                index= i;
+                break
+            }else{
+                check= false;
+            }
+        }console.log(check);
+        if(check===false){
+            alert("bo may khong co ngoi sao nay")
+        }else{
+            let d= Tstar[index];
+            alert(d)
+        }
+    }
+     newstar()
+
+</script>
+
 </body>
 </html>
