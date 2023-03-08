@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function songuyen(array){
+      let min = array[0];
+      for(let i= 1; i<array.length;i++){
+          if(min>array[i]){
+              min=array[i];
+          }
+
+      }
+      console.log("min= ",min)
+  }
+  let num=[3,62,1]
+  songuyen(num)
+</script>
+
+</body>
+</html>
